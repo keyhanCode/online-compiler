@@ -2,8 +2,8 @@ const fs = require("fs");
 const Driver = require("./Driver.js");
 const path = require("path");
 
-const resPath = path.join(__dirname, "../outlextokens/test.txt");
-const errorPath = path.join(__dirname, "../outlexerrors/test.txt");
+const resPath = path.join(__dirname, "../../outlextokens/test.txt");
+const errorPath = path.join(__dirname, "../../outlexerrors/test.txt");
 
 let responss;
 let errorr;
