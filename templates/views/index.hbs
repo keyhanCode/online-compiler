@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My HTML Template</title>
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- قسمت اول: فرم ورود کد -->
+      <div class="form-container test0">
+        <h2 class="form-title">Online Compiler</h2>
+        <form action="/submit-text" method="POST">
+          <div class="input-container">
+            <label for="code">Enter your Code</label><br />
+            <textarea id="code" name="code" rows="10" cols="50"></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="output-container test1">
+        <!-- قسمت دوم: نمایش خروجی کامپایل -->
+        <div class="output">
+          <h2 class="output-title">Output</h2>
+          <pre id="resOutput" class="outputRes"></pre>
+        </div>
+
+        <!-- قسمت سوم: نمایش ارورها -->
+        <div class="output test2">
+          <h2 class="output-title">Errors</h2>
+          <pre id="errorsOutput" class="errorRes"></pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../public/js/app.js"></script>
+  </body>
+</html>
